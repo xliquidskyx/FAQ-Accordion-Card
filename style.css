@@ -39,6 +39,9 @@ body {
     top: 13em;
     position: relative;
     padding: 9em 2em 2em 2em;
+    -webkit-box-shadow: 2px 14px 34px 0px rgba(37, 37, 111, 1);
+    -moz-box-shadow: 2px 14px 34px 0px rgba(37, 37, 111, 1);
+    box-shadow: 2px 14px 34px 0px rgba(37, 37, 111, 1);
 }
 
 .logo {
@@ -66,11 +69,38 @@ body {
 }
 
 .question-container {
+    padding: 1em;
     text-align: justify;
 }
 
 .question {
+    display: inline-block;
     color:hsl(237, 12%, 33%);
-    font-size: 12px;
+    cursor: pointer;
+    font-size: 15px;
     font-weight: 400;
+    padding: 1em 0 1em 0;
+    transition: all ease-out 1s;
+    min-width: 65vw;
+}
+
+.question:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+
+.arrow-down {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    padding-top: 1.3em;
+    padding-right: 1.5em;
+}
+
+.divider {
+    color: hsl(240, 5%, 91%);
+}
+.answer {
+    display: none;
 }
