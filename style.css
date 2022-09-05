@@ -105,10 +105,6 @@ body {
 }
 
 @media screen and (min-width: 450px) {
-    #faq-container {
-        width: 70vw;
-    }
-
     .question-container {
         padding-left: 2.5em;
     }
@@ -140,17 +136,37 @@ body {
     }
 }
 
+@media screen and (min-width: 650px) {
+    .logo {
+        top: -0.1em;
+        width: 45vw;
+    }
+    .logo-bg {
+        top: 7em;
+
+    }
+}
+
 @media screen and (min-width: 1000px) {
     .desktop-container {
-        display: flex;
-        flex-direction: row;
+        width: 60vw;
+    }
 
+    .logo-container {
+        display: inline-block;
+        left: 10vw;
+    }
+
+    #faq-container {
+        left: 22vw;
+        padding-left: 25vw;
+        width: 60vw;
     }
 
     .logo {
         left: 5em;
         top: 22em;
-        width: 40vw;
+        width: 35vw;
     }
 
     .logo-bg {
@@ -159,11 +175,12 @@ body {
         width: 40vw;
     }
 
-    .question-container {
-        width: 10vw;
+    .heading {
+        text-align: left;
     }
 
-    .divider {
+    .question-container {
         width: 30vw;
     }
+
 }
