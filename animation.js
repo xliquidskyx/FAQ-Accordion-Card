@@ -10,20 +10,36 @@ questionContainer.forEach(function (element) {
             answer.css({
                 "color": "hsl(240, 6%, 50%)"
             });
-            arrow.css({
-                "transform": "scaleY(-1)",
-                "marginTop": "15px"
-            });
             question.css({
                 "color": "black",
                 "fontWeight": "700"
             })
 
+            if (window.innerWidth < 1440) {
+                arrow.css({
+                    "transform": "scaleY(-1)",
+                    "marginTop": "15px"
+                });
+            } else {
+                arrow.css({
+                    "transform": "scaleY(-1)",
+                    "marginTop": "-35px"
+                });
+            }
+            
         } else {
-            arrow.css({
-                "transform": "scaleY(1)",
-                "marginTop": "0"
-            });
+
+            if (window.innerWidth < 1440) {
+                arrow.css({
+                    "transform": "scaleY(1)",
+                    "marginTop": "0"
+                });
+            } else {
+                arrow.css({
+                    "transform": "scaleY(1)",
+                    "marginTop": "-45px"
+                });
+            }
             question.css({
                 "fontWeight": "400"
             })
