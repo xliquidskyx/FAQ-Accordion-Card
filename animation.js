@@ -1,4 +1,5 @@
 var questionContainer = document.querySelectorAll('.question-container');
+var allAnswers = document.querySelectorAll('.answer');
 
 questionContainer.forEach(function (element) {
     $(element).click(function () {
